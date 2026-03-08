@@ -1,3 +1,14 @@
 .md-grid {
   max-width: initial;
 }
+th[role=columnheader] {
+  cursor: pointer;
+  white-space: nowrap;
+}
+th[role=columnheader]:not(.no-sort)::after {
+  content: " \25B5\25BF";
+  font-size: 0.7em;
+  opacity: 0.4;
+}
+th[role=columnheader][aria-sort=ascending]::after  { content: " \25B4"; opacity: 1; }
+th[role=columnheader][aria-sort=descending]::after { content: " \25BE"; opacity: 1; }
