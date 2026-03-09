@@ -12,3 +12,9 @@ th[role=columnheader]:not(.no-sort)::after {
 }
 th[role=columnheader][aria-sort=ascending]::after  { content: " \25B4"; opacity: 1; }
 th[role=columnheader][aria-sort=descending]::after { content: " \25BE"; opacity: 1; }
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
